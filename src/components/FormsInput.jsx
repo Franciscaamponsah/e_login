@@ -7,7 +7,7 @@ const FormsInput = ({ icon, label, placeholder, type }) => {
                 {label}
             </label>
             <img src={icon} className='ml-3' alt="" />
-            <input type={type}
+            <input type={type} placeholder={placeholder}
                 className='w-[16.375rem] rounded-lg px-[0.875rem] py-[0.625rem] border space-x-[0.375rem]'
             />
             {/* <label for="category" class="text-sm font-medium text-gray-700">Category:</label>

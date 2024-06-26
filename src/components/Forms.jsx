@@ -8,7 +8,7 @@ const Forms = () => {
     <div className='flex justify-center'>
       <form action="" className='flex flex-col space-y-[1.25rem] pt-5'>
         <FormsInput 
-        label="Username"
+        label="Login as"
         placeholder="Enter your username"
         icon={<AiOutlineEye />}
         type="text"
@@ -20,8 +20,8 @@ const Forms = () => {
         type="text"
         />
         <FormsInput 
-        label="Username"
-        placeholder="Enter your username"
+        label="Password"
+        placeholder="Enter your password"
         icon={<AiOutlineEye />}
         type="text"
         />

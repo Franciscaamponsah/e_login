@@ -2,8 +2,10 @@ import React from 'react'
 import Logo from "../assets/images/ebits-logo 1.png"
 import Share from "../assets/images/share-manager.png"
 import Bitcoin from "../assets/images/bitcoin.jpg"
+import PoweredBy from "../assets/images/powered-by.png"
 import Forms from '../components/Forms'
 import Products from '../components/Products'
+import Cards from '../components/Cards'
 
 
 const Login = () => {
@@ -25,6 +27,15 @@ const Login = () => {
                 </div>
                 <Forms />
                 <Products />
+                <Cards 
+                name="Fixed Assets Manager"
+                />
+                <Cards name="Human Resource Manager"/>
+                <Cards name="Loans Manager"/>
+                <Cards name="Mobile Banking"/>
+                <div className='mt-[1.438rem] mb-11 flex justify-center '>
+                    <img src={PoweredBy} alt="" />
+                </div>
             </div>
             <div className=' w-[59.75rem] bg-orange-600'>
                 <img src={Bitcoin} className='h-full' alt="bitcoin image" />
