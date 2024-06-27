@@ -2,17 +2,13 @@ import React from 'react'
 import FormsInput from './FormsInput'
 import { AiOutlineEye } from "react-icons/ai";
 import Button from './Button';
+import Select from './Select';
 
 const Forms = () => {
   return (
     <div className='flex justify-center'>
       <form action="" className='flex flex-col space-y-[1.25rem] pt-5'>
-        <FormsInput 
-        label="Login as"
-        placeholder="Enter your username"
-        icon={<AiOutlineEye />}
-        type="text"
-        />
+        <Select />
         <FormsInput 
         label="Username"
         placeholder="Enter your username"
