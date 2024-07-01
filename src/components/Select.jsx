@@ -9,6 +9,7 @@ const Select = () => {
     </label>
     <select id="category" name='category'
         className='w-[16.375rem] rounded-lg px-[0.875rem] py-[0.625rem] border space-x-[0.375rem]'
+        
     />
 </div>
 

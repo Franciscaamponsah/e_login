@@ -1,11 +1,15 @@
 import React from 'react'
 import Logo from "../assets/images/ebits-logo 1.png"
 import Share from "../assets/images/share-manager.png"
-import Bitcoin from "../assets/images/bitcoin.jpg"
+import Bitcoin from "../assets/images/bitcoin-image.jpg"
 import PoweredBy from "../assets/images/powered-by.png"
 import Forms from '../components/Forms'
 import Products from '../components/Products'
 import Cards from '../components/Cards'
+import Assets from "../assets/icons/assets-logo.svg"
+import Resource from "../assets/icons/human-resource-logo.svg"
+import Loans from "../assets/icons/loans.svg"
+import Banking from "../assets/icons/mobile-bank.svg"
 
 
 const Login = () => {
@@ -28,11 +32,10 @@ const Login = () => {
                 <Forms />
                 <Products />
                 <Cards 
-                name="Fixed Assets Manager"
-                />
-                <Cards name="Human Resource Manager"/>
-                <Cards name="Loans Manager"/>
-                <Cards name="Mobile Banking"/>
+                name="Fixed Assets Manager" icon={Assets}/>
+                <Cards name="Human Resource Manager" icon={Resource}/>
+                <Cards name="Loans Manager" icon={Loans}/>
+                <Cards name="Mobile Banking" icon={Banking}/>
                 <div className='mt-[1.438rem] mb-11 flex justify-center '>
                     <img src={PoweredBy} alt="" />
                 </div>
