@@ -24,7 +24,7 @@ const Forms = () => {
         <div className='flex justify-between'>
          <label htmlFor="checkbox">
                 <input type="checkbox" />
-                <span>Remember me</span>
+                <span className='pl-1'>Remember me</span>
             </label>
             <button className='text-[#0086C9]'>Forgot Password</button>
         </div>

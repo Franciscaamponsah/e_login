@@ -7,7 +7,7 @@ import Forms from '../components/Forms'
 import Products from '../components/Products'
 import Cards from '../components/Cards'
 import Assets from "../assets/icons/assets-logo.svg"
-import Resource from "../assets/icons/human-resource-logo.svg"
+import Resource from "../assets/icons/human-resource.svg"
 import Loans from "../assets/icons/loans.svg"
 import Banking from "../assets/icons/mobile-bank.svg"
 
