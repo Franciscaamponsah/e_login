@@ -10,6 +10,7 @@ import Assets from "../assets/icons/assets-logo.svg"
 import Resource from "../assets/icons/human-resource.svg"
 import Loans from "../assets/icons/loans.svg"
 import Banking from "../assets/icons/mobile-bank.svg"
+import { Link } from 'react-router-dom'
 
 
 const Login = () => {
@@ -19,7 +20,9 @@ const Login = () => {
         <div className='h-full flex'>
             <div className=' w-[30.25rem]  '>
                 <div className='pt-4 pl-[5.438rem]'>
+                    <Link to="login">
                     <img className='' src={Logo} alt="company logo" />
+                    </Link>
                 </div>
                 <div className='justify-center '>
                     <div className='flex justify-center'>
@@ -31,11 +34,14 @@ const Login = () => {
                 </div>
                 <Forms />
                 <Products />
+                <div className='grid grid-cols-2'>
                 <Cards 
                 name="Fixed Assets Manager" icon={Assets}/>
                 <Cards name="Human Resource Manager" icon={Resource}/>
                 <Cards name="Loans Manager" icon={Loans}/>
                 <Cards name="Mobile Banking" icon={Banking}/>
+
+                </div>
                 <div className='mt-[1.438rem] mb-11 flex justify-center '>
                     <img src={PoweredBy} alt="" />
                 </div>
