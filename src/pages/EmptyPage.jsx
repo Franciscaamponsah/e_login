@@ -1,9 +1,9 @@
 import React from 'react'
 
-const EmptyPage = () => {
+const EmptyPage = ({title}) => {
   return (
-    <div className='text-stone-700 text-5xl flex justify-center text-center items-center'>
-      <p>404</p>
+    <div className='h-screen text-stone-700 text-5xl flex justify-center items-center text-center'>
+      <p>{title}</p>
     </div>
   )
 }
