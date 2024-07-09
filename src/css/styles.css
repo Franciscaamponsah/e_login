@@ -1,10 +1,16 @@
-.cards{
-    /* background-color: red; */
+.cards {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-content: center;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1.438rem;
+}
+.main {
     display: grid;
-    grid-template-columns: max-content max-content;
-    /* width: 30.25rem; */
-    align-content: center;
-    gap: 0.75rem;
-    justify-content: center;
-    margin-top:1.438rem;
+    grid-template-columns: 30rem 1fr;
+}
+.header{
+    grid-column: 1/-1;
+    /* width: 73.625rem; */
 }

@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Button from "./components/Button";
 import EmptyPage from "./pages/EmptyPage";
 import ErrorPage from "./pages/ErrorPage";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
           <Route
             path="Mobile_Banking"
             element={<EmptyPage title="Mobile Banking Page" />}
+          />
+          <Route
+            path="Dashboard"
+            element={<Dashboard />}
           />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
