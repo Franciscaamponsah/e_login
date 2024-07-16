@@ -5,6 +5,7 @@ import Button from "./components/Button";
 import EmptyPage from "./pages/EmptyPage";
 import ErrorPage from "./pages/ErrorPage";
 import Dashboard from "./pages/Dashboard";
+import UserOptions from "./components/UserOptions";
 
 function App() {
   return (

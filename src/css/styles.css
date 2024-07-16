@@ -7,10 +7,18 @@
   margin-top: 1.438rem;
 }
 .main {
-    display: grid;
-    grid-template-columns: 30rem 1fr;
+  display: grid;
+  grid-template-columns: 16.438rem 1fr;
 }
-.header{
-    grid-column: 1/-1;
-    /* width: 73.625rem; */
+.header {
+  grid-column: 1/-1;
+  /* width: 73.625rem; */
+}
+.grid{
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  align-content: start;
+  gap: 0.75rem;
+  /* justify-content: center; */
+  /* padding: 5rem  1rem; */
 }

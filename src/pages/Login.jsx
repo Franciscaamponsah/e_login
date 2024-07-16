@@ -17,7 +17,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="h-full flex">
+      <div className="h-full flex font-Poppins">
         <div className=" w-[30.25rem]  ">
           <div className="pt-4 pl-[5.438rem]">
             <Link to="login">
