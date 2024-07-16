@@ -10,10 +10,9 @@ const Sidebar = () => {
 
   const toggleShareholdersMenu = () => {
     setIsShareholdersOpen(!isShareholdersOpen);
-    console.log(isShareholdersOpen);
   };
   return (
-    <div className="sidebar border border-bg-[#D0D5DD] py-[1.563rem]">
+    <div className="sidebar border border-bg-[#D0D5DD] py-[1.563rem] cursor-pointer overflow-y-scroll h-[100vh] scroll">
       <ul className=" text-[#334054] ">
         <NavItem
           text="Dashboard"
@@ -29,9 +28,10 @@ const Sidebar = () => {
           text="Share Holders"
           displayDownIcon={true}
           icon="/icons/sprite.svg#icon-users"
-          onClick={toggleShareholdersMenu}
+          onHandleShareHolder={toggleShareholdersMenu}
+          
         />
-        {toggleShareholdersMenu && (<ShareOptions />)}
+        {isShareholdersOpen && <ShareOptions />}
         <NavItem
           text="AGM Registration"
           displayDownIcon={true}
@@ -42,14 +42,9 @@ const Sidebar = () => {
           displayDownIcon={true}
           icon="/icons/sprite.svg#icon-election"
         />
-        <NavItem
-          text="Approvals"
-          displayDownIcon={true}
-          icon="/icons/sprite.svg#icon-approval"
-        />
+        <NavItem text="Approvals" icon="/icons/sprite.svg#icon-approval" />
         <NavItem
           text="Shared Transaction"
-          displayDownIcon={true}
           icon="/icons/sprite.svg#icon-transaction"
         />
         <NavItem

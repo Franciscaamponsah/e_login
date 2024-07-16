@@ -1,11 +1,15 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { NavLink } from "react-router-dom";
 
-const NavItem = ({ text, icon, displayDownIcon }) => {
+const NavItem = ({ text, icon, displayDownIcon, onHandleShareHolder }) => {
   return (
     <li
-      className="flex py-[0.625rem] pl-[1.313rem] pr-[1.75rem] hover:bg-[#EAECF0]"
-      
+      onClick={() => {
+        onHandleShareHolder();
+      }}
+      className="flex py-[0.625rem] pl-[1.313rem] pr-[1.2rem] hover:bg-[#EAECF0] hover:text-gray-800 active:bg-gray-50 active:text-gray-800 active:link:bg-gray-50 active:link:text-gray-800 active:visited:bg-gray-50 active:visited:text-gray-800 rounded-sm
+"
     >
       <div className="flex items-center w-[100%] justify-between">
         <div className="flex gap-[0.625rem] items-center">

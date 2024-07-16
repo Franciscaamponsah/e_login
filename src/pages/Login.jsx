@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/images/ebits-logo 1.png";
 import Share from "../assets/images/share-manager.png";
 import Bitcoin from "../assets/images/bitcoin-image.jpg";
@@ -6,10 +6,6 @@ import PoweredBy from "../assets/images/powered-by.png";
 import Forms from "../components/Forms";
 import Products from "../components/Products";
 import Cards from "../components/Cards";
-import Assets from "../assets/icons/assets-logo.svg";
-import Resource from "../assets/icons/human-resource.svg";
-import Loans from "../assets/icons/loans.svg";
-import Banking from "../assets/icons/mobile-bank.svg";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -20,7 +16,7 @@ const Login = () => {
       <div className="h-full flex font-Poppins">
         <div className=" w-[30.25rem]  ">
           <div className="pt-4 pl-[5.438rem]">
-            <Link to="login">
+            <Link to="/">
               <img className="" src={Logo} alt="company logo" />
             </Link>
           </div>
