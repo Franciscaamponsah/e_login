@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { FaArrowUp } from "react-icons/fa6";
-import ArrowUp from "../assets/icons/arrow-up.png"
+import ArrowUp from "../assets/icons/arrow-up.png";
 
 const Card = ({ name, icon, number, percentage }) => {
   return (
@@ -23,21 +23,8 @@ const Card = ({ name, icon, number, percentage }) => {
           </p>
         </div>
       </div>
-
-      {/* <p>{name}</p>
-        <img src={icon} alt="icon" />
-        <h1>{number}</h1>
-        <div className="w-[4.375rem] h-6 bg-[#ECFDF3]">
-            <div >
-            <img src={ArrowUp} alt="arrow up" />
-          <p>
-            {percentage}
-          </p>
-
-            </div>
-        </div> */}
     </div>
   );
 };
 
-export default Card
+export default Card;

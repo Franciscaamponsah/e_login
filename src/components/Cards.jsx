@@ -16,11 +16,7 @@ const Cards = ({ name, icon, handleOnClick }) => {
           <p className="leading-5">{name}</p>
         </div>
       </div>
-      {/* <div className='w-[9.313rem] h-24 border rounded-lg px-[1.125rem] flex justify-center items-center mt-[1.438rem]'>
-                <p className='w-[7.313rem] h-[2.5rem] leading-5 text-center'>{name}</p>
-            </div> */}
     </div>
-    // </div>
   );
 };
 

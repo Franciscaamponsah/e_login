@@ -1,17 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import Logo from "../assets/images/ebits-logo 3.png";
 import Notification from "../assets/icons/Notification.png";
 import Profile from "../assets/images/profile.jpg";
 import { IoIosArrowDown } from "react-icons/io";
-import UserOptions from './UserOptions';
+import UserOptions from "./UserOptions";
 
 const Header = () => {
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
 
-    const [isProfileOpen, setIsProfileOpen] = useState(false)
-
-    const handleProfile = () =>{
-        setIsProfileOpen( !isProfileOpen)
-    }
+  const handleProfile = () => {
+    setIsProfileOpen(!isProfileOpen);
+  };
 
   return (
     <div className="relative flex items-center justify-between w-full">
@@ -31,12 +30,15 @@ const Header = () => {
           <IoIosArrowDown onClick={handleProfile} />
         </div>
       </div>
-      {
-        isProfileOpen &&
-      <UserOptions name="Olivia Rhye" email="oliviarhye@example.com" image={Profile}/>
-      }
+      {isProfileOpen && (
+        <UserOptions
+          name="Olivia Rhye"
+          email="oliviarhye@example.com"
+          image={Profile}
+        />
+      )}
     </div>
   );
-}
+};
 
-export default Header
+export default Header;

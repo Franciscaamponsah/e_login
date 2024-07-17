@@ -1,6 +1,5 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { NavLink } from "react-router-dom";
 
 const NavItem = ({ text, icon, displayDownIcon, onHandleShareHolder }) => {
   return (

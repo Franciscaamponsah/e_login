@@ -51,7 +51,7 @@ const Forms = () => {
             className="w-[16.375rem] rounded-lg pl-[0.875rem] pr-9 py-[0.625rem] border space-x-[0.375rem]"
           />
         </FormGroup>
-        <FormGroup label="Passsword">
+        <FormGroup label="Password">
           <input
             type="password"
             value={password}

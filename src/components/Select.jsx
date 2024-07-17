@@ -7,7 +7,6 @@ const Select = () => {
         htmlFor="category"
         className="text-[0.875rem] leading-5 pb-[0.375rem]"
       >
-        {/* {label} */}
         Login as
       </label>
       <select
