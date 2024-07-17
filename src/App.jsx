@@ -15,7 +15,6 @@ function App() {
           <Route path="/" element={<Login />}></Route>
 
           <Route index element={<Login />} />
-          <Route path="login" element={<Button />} />
           <Route
             path="Fixed_Assets_Manager"
             element={<EmptyPage title="Fixed Assets Manager Page" />}

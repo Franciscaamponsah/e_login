@@ -1,6 +1,7 @@
 import React from "react";
 import { CiSettings } from "react-icons/ci";
 import { FiLogOut } from "react-icons/fi";
+import { Link} from "react-router-dom";
 
 const UserOptions = ({ image, name, email }) => {
   return (
@@ -23,10 +24,10 @@ const UserOptions = ({ image, name, email }) => {
           <CiSettings size="1.8rem" />
           <span className="pl-3">Account settings</span>
         </button>
-        <button className="px-4 py-2 hover:bg-[#EAECF0] flex">
+        <Link to={"/"} className="px-4 py-2 hover:bg-[#EAECF0] flex">
           <FiLogOut size="1.5rem" />
           <span className="pl-3">Logout</span>
-        </button>
+        </Link>
       </div>
     </div>
   );
